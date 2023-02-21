@@ -9,4 +9,12 @@
     <p>This is my first website!</p>
     <a href="https://www.baidu.com/">Visit Baidu</a>
   </body>
+  fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    // 这里处理获取到的JSON数据
+  })
+  .catch(error => console.error(error));
+  </body>
 </html>
